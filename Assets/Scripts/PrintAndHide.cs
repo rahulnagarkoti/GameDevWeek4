@@ -11,13 +11,19 @@ public class PrintAndHide : MonoBehaviour
     void Start()
     {
         i=3;
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
         i++;
+         if(gameObject.tag == "Red" && i == 100)
+            gameObject.SetActive(false);
+
+        int randomInt = Random.Range(200, 251);
+        if(gameObject.tag == "Blue" && i == randomInt)
+            rend.enabled = false;
         Debug.Log( gameObject.name+":"+ i.ToString());
     }
 }
