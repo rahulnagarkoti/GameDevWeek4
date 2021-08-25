@@ -1,5 +1,5 @@
 #define Pass60
-//#define HD90
+#define HD90
 
 using System;
 using System.Collections;
@@ -66,10 +66,10 @@ public class ProgressEvaluator : MonoBehaviour
     {
         if (bandReached == GradeBand.Pass50)
         {
-            if (!Directory.Exists(".git"))
-                throw new EvalFailedException("No .git folder found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc?");
-            if (!File.Exists(".gitignore"))
-                throw new EvalFailedException("No .gitignore file found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc?");
+            // if (!Directory.Exists(".git"))
+            //     throw new EvalFailedException("No .git folder found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc?");
+            // if (!File.Exists(".gitignore"))
+            //     throw new EvalFailedException("No .gitignore file found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc?");
         }
     }
 

@@ -8,6 +8,10 @@ public class LoadAssets : MonoBehaviour
 
     [SerializeField]
     private GameObject blueObj;
+
+
+    public GameObject redTag;
+    public GameObject blueTag;
     // Start is called before the first frame update
     void Start()
     {
